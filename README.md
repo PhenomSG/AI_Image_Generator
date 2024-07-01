@@ -31,4 +31,4 @@ This project is a web-based application that allows users to generate AI-generat
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE.md](LICENSE) file for details.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE.md) file for details.
