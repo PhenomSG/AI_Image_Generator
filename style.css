@@ -1,15 +1,17 @@
 /* style.css */
 body {
-    background-image: url("https://images.unsplash.com/photo-1501870118101-e7b3a2ef8153?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1950&q=80"); /* Replace with your desired background image */
+    background-image: url('background.jpg');
     background-size: cover;
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     color: #fff;
 }
+
 
 .container {
     display: flex;
