@@ -2,12 +2,6 @@
 
 This project is a web-based application that allows users to generate AI-generated images using the Stable Diffusion API. Users can input text descriptions, specify negative prompts, select aspect ratios, and choose styles to customize the generated images.
 
-## Table of Contents
-
-- [Installation](#installation)
-- [Usage](#usage)
-- [License](#license)
-
 ## Installation
 
 1. Clone the repository:
