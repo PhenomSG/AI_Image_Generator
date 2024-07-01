@@ -1,0 +1,10 @@
+IMAGE 1
+prompt -> 
+A robot painting a robot portrait in a studio , futuristic  robot, mix of steampunk and realistic human robot, colorful, high detailed, modern art style, high resolution
+
+IMAGE 2
+prompt ->
+
+
+IMAGE 3
+prompt ->
