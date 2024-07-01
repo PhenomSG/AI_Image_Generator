@@ -1,56 +1,71 @@
+/* style.css */
 body {
-    background-color: #222;
-    color: #fff;
-    font-family: sans-serif;
+    background-image: url("https://images.unsplash.com/photo-1501870118101-e7b3a2ef8153?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1950&q=80"); /* Replace with your desired background image */
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
     margin: 0;
-    padding: 0;
+    color: #fff;
 }
 
 .container {
     display: flex;
-    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
 .sidebar {
-    width: 30%;
-    background-color: #333;
+    background-color: rgba(0, 0, 0, 0.8); /* Darker background for the sidebar */
     padding: 20px;
-}
-
-.main {
-    width: 70%;
-    background-color: #111;
-    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    margin-right: 30px;
 }
 
 .input-section {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
+    align-items: center;
+    margin-bottom: 10px;
 }
 
 .input-button {
-    background-color: #444;
+    padding: 10px 20px;
+    background-color: #333;
     color: #fff;
     border: none;
-    padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.input-button.active {
+    background-color: #007bff;
+}
+
+.input-button:hover {
+    background-color: #0056b3;
 }
 
 textarea {
     width: 100%;
     height: 150px;
-    background-color: #444;
+    padding: 10px;
+    background-color: #222;
     color: #fff;
     border: none;
-    padding: 10px;
     border-radius: 5px;
-    resize: vertical;
+    resize: none;
+    font-family: 'Arial', sans-serif;
 }
 
 .prompts {
-    margin-bottom: 20px;
+    margin-top: 10px;
 }
 
 .prompts label {
@@ -58,90 +73,131 @@ textarea {
     margin-bottom: 5px;
 }
 
-.prompts input {
+.prompts input[type="text"] {
     width: 100%;
-    height: 30px;
-    background-color: #444;
+    padding: 8px;
+    background-color: #222;
     color: #fff;
     border: none;
-    padding: 10px;
     border-radius: 5px;
-}
-
-.generate-button {
-    background-color: #008080;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
 }
 
 .options {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    margin-top: 20px;
 }
 
 .option {
-    display: flex;
-    align-items: center;
+    margin-bottom: 10px;
 }
 
 .option label {
-    margin-right: 10px;
+    display: block;
+    margin-bottom: 5px;
 }
 
 .option select {
-    background-color: #444;
+    width: 100%;
+    padding: 8px;
+    background-color: #222;
     color: #fff;
     border: none;
-    padding: 10px;
     border-radius: 5px;
+    font-family: 'Arial', sans-serif;
+}
+
+.generate-button {
+    display: block;
+    margin: 20px auto;
+    padding: 12px 30px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.generate-button:hover {
+    background-color: #0056b3;
+}
+
+.main {
+    width: 600px;
 }
 
 .header {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 1.2em;
+    line-height: 1.5;
 }
 
 .inspiration {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+.inspiration h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
 }
 
 .inspiration-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
 }
 
 .inspiration-item {
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 10px;
     text-align: center;
 }
 
 .inspiration-item img {
     width: 100%;
+    height: 150px;
+    object-fit: cover;
     border-radius: 5px;
 }
 
 .use-prompt-button {
-    background-color: #008080;
+    display: block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: #333;
     color: #fff;
     border: none;
-    padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 10px;
+    transition: background-color 0.3s;
 }
 
-.inspire-me-button,
-.random-button {
-    background-color: #008080;
+.use-prompt-button:hover {
+    background-color: #0056b3;
+}
+
+.inspire-me-button {
+    display: block;
+    margin: 20px auto;
+    padding: 12px 30px;
+    background-color: #007bff;
     color: #fff;
     border: none;
-    padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.inspire-me-button:hover {
+    background-color: #0056b3;
 }
