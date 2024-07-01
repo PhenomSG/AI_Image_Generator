@@ -1,60 +1,79 @@
-<!DOCTYPE html> 
-<html lang="en"> 
-
-<head> 
-	<meta charset="UTF-8"> 
-	<meta name="viewport"
-		content="width=device-width, initial-scale=1.0"> 
-	<title> 
-	AI Image generator Website using 
-	HTML, CSS and JavaScript 
-	</title> 
-	<link rel="stylesheet" href="df.css"> 
-</head> 
-
-<body> 
-	<div class="main-container"> 
-		<div class="container"> 
-			<div class="headings-container"> 
-				<h1>GeeksforGeeks</h1> 
-				<h2 class="heading"> 
-				AI Image generator website 
-				using JavaScript 
-				</h2> 
-				<h5 class="sub-heading"> 
-				Enter the text in the below input bar and 
-				<br /> 
-				get the AI generated image 
-				related to this text. 
-				</h5> 
-			</div> 
-
-			<div id="generate-image-form"
-				class="form-container"> 
-				<form class="my-form"> 
-					<input id="input-value"
-						placeholder="Enter some text..."
-						type="text"
-						class="form-input form-controls"> 
-					<button type="submit"
-							class="image-generate-btn 
-								form-controls"> 
-					Generate Image 
-					</button> 
-				</form> 
-			</div> 
-
-			<div id="images-visible"
-				class="image-container"> 
-				<p id="imageContainerText"></p> 
-				<img id="generated-image"
-					class="my-generated-image"
-					src='' alt="AI Generated Image"> 
-			</div> 
-		</div> 
-	</div> 
-
-	<script src="random.js"></script> 
-</body> 
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Image Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="input-section">
+                <button class="input-button">From Text</button>
+                <button class="input-button">From Image</button>
+            </div>
+            <textarea placeholder="Describe what you want the AI to draw"></textarea>
+            <div class="prompts">
+                <label for="negative-prompts">Negative Prompts</label>
+                <input type="text" id="negative-prompts" placeholder="Enter negative prompts">
+            </div>
+            <button class="generate-button">Generate</button>
+            <div class="options">
+                <div class="option">
+                    <label for="aspect-ratio">Aspect Ratio</label>
+                    <select id="aspect-ratio">
+                        <option value="1:1">1:1</option>
+                        <option value="16:9">16:9</option>
+                        <option value="4:3">4:3</option>
+                    </select>
+                </div>
+                <div class="option">
+                    <label for="styles">Styles</label>
+                    <select id="styles">
+                        <option value="all">All</option>
+                        <option value="digital-art">Digital Art</option>
+                        <option value="photo">Photo</option>
+                        <option value="themes">Themes</option>
+                    </select>
+                </div>
+                <div class="option">
+                    <label for="fotor">Fotor M2</label>
+                    <select id="fotor">
+                        <option value="all">All</option>
+                        <option value="digital-art">Digital Art</option>
+                        <option value="photo">Photo</option>
+                        <option value="themes">Themes</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="header">
+                <h1>AI Image Creator</h1>
+                <p>Convert text to images in seconds with our free AI image creator. Type a detailed description of what you want to see and watch your imagination transform into incredible AI images.</p>
+            </div>
+            <div class="inspiration">
+                <h2>No inspiration? Try these:</h2>
+                <div class="inspiration-grid">
+                    <div class="inspiration-item">
+                        <img src="https://picsum.photos/200/200" alt="Inspiration Image 1">
+                        <button class="use-prompt-button">Use Prompt</button>
+                    </div>
+                    <div class="inspiration-item">
+                        <img src="https://picsum.photos/200/200" alt="Inspiration Image 2">
+                        <button class="use-prompt-button">Use Prompt</button>
+                    </div>
+                    <div class="inspiration-item">
+                        <img src="https://picsum.photos/200/200" alt="Inspiration Image 3">
+                        <button class="use-prompt-button">Use Prompt</button>
+                    </div>
+                </div>
+            </div>
+            <button class="inspire-me-button">Inspire Me</button>
+            <button class="random-button">Random</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
 </html>
