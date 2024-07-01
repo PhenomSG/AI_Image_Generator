@@ -1,6 +1,18 @@
 IMAGE 1
 prompt -> 
-A robot painting a robot portrait in a studio , futuristic  robot, mix of steampunk and realistic human robot, colorful, high detailed, modern art style, high resolution
+Create an image of a robot painting a portrait of another robot in a futuristic studio. The setting is a harmonious blend of steampunk and modern futuristic elements, showcasing a mix of intricate gears, polished metal, and advanced technology. The painting robot is an exquisite blend of realistic human features and robotic enhancements, with a sleek, high-tech design that incorporates elements of steampunk aesthetics. Its body is made of polished metal and synthetic materials, with visible gears and cogs that move gracefully as it works. The robot has human-like limbs with metallic skin that gleams under the studio lights, and its face features expressive eyes that convey a deep sense of creativity and focus.
+
+The robot artist is positioned in front of an easel, its hand holding a brush with precision as it carefully applies strokes to the canvas. The portrait it is painting depicts another robot, equally detailed and lifelike, with a unique design that blends steampunk elements and modern robotics. The subject robot has a humanoid form with intricate metallic patterns and gears integrated into its body, and its face reflects a serene, almost human-like expression.
+
+The studio itself is a marvel of futuristic design, filled with a mix of traditional art tools and cutting-edge technology. Classic wooden easels and paintbrushes sit alongside holographic projectors, digital tablets, and robotic arms that assist in the creative process. The walls are adorned with colorful, high-resolution artwork that combines steampunk and modern art styles, creating a visually stimulating environment.
+
+Vivid colors dominate the scene, with vibrant hues of blue, red, gold, and silver intermingling to create a dynamic and energetic atmosphere. The lighting is soft yet bright, casting a warm glow over the entire studio and highlighting the intricate details of both the painting robot and the portrait it is creating.
+
+The painting robot's body is a masterpiece of design, with a sleek, athletic build that is both functional and aesthetically pleasing. Its joints are seamlessly integrated, allowing for smooth, precise movements, and its metallic skin is adorned with delicate engravings and patterns that add to its artistic allure. The robot's eyes are particularly striking, glowing with an inner light that reflects its deep understanding and appreciation of art.
+
+As the robot works, holographic projections emerge from its fingertips, adding layers of depth and complexity to the portrait. These projections blend seamlessly with the traditional paint on the canvas, creating a unique fusion of old and new artistic techniques. The portrait itself is highly detailed, capturing the essence of the subject robot with remarkable accuracy and creativity.
+
+In the background, various pieces of art and technology coexist, illustrating the endless possibilities when traditional artistry meets advanced robotics. 
 
 IMAGE 2
 prompt ->
