@@ -4,6 +4,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const usePromptButtons = document.querySelectorAll('.use-prompt-button');
     const textarea = document.querySelector('textarea');
     const negativePromptsInput = document.getElementById('negative-prompts');
+	const aspectRatioSelect = document.getElementById('aspect-ratio');
+    const stylesSelect = document.getElementById('styles');
 
     const prompts = [
         `Create an image of a robot painting a portrait of another robot in a futuristic studio. The setting is a harmonious blend of steampunk and modern futuristic elements, showcasing a mix of intricate gears, polished metal, and advanced technology. The painting robot is an exquisite blend of realistic human features and robotic enhancements, with a sleek, high-tech design that incorporates elements of steampunk aesthetics. Its body is made of polished metal and synthetic materials, with visible gears and cogs that move gracefully as it works. The robot has human-like limbs with metallic skin that gleams under the studio lights, and its face features expressive eyes that convey a deep sense of creativity and focus.
@@ -28,7 +30,9 @@ document.addEventListener('DOMContentLoaded', () => {
     generateButton.addEventListener('click', async () => {
         const prompt = textarea.value;
         const negativePrompt = negativePromptsInput.value;
-        
+        const aspectRatio = aspectRatioSelect.value;
+        const style = stylesSelect.value;
+
         try {
             const response = await fetch('https://stable-diffusion-api.example.com/generate', {
                 method: 'POST',
@@ -38,7 +42,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 body: JSON.stringify({
                     prompt: prompt,
                     negative_prompt: negativePrompt,
-                    // Add other necessary parameters here, e.g., aspect ratio, style, etc.
+                    aspect_ratio: aspectRatio,
+                    style: style
                 })
             });
 
