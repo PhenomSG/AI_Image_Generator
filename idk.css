@@ -1,77 +1,147 @@
-body { 
-	padding: 0; 
-	margin: 0; 
-	box-sizing: border-box; 
-} 
+body {
+    background-color: #222;
+    color: #fff;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
 
-.main-container { 
-	display: flex; 
-	align-items: center; 
-	justify-content: center; 
-} 
+.container {
+    display: flex;
+    height: 100vh;
+}
 
-.container { 
-	padding: 20px; 
-	border: 2px solid #ccc; 
-	width: 50%; 
-	border-radius: 10px; 
-	box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); 
-	display: flex; 
-	flex-direction: column; 
-	align-items: center; 
-	justify-content: center; 
-	background-repeat: no-repeat; 
-	background-size: cover; 
-	color: #fff; 
-} 
+.sidebar {
+    width: 30%;
+    background-color: #333;
+    padding: 20px;
+}
 
-.heading { 
-	color: #318C46; 
-} 
+.main {
+    width: 70%;
+    background-color: #111;
+    padding: 20px;
+}
 
-.headings-container { 
-	text-align: center; 
-	color: #000; 
-} 
+.input-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
 
-.form-controls { 
-	padding: 10px; 
-	border-radius: 5px; 
-	border: none; 
-} 
+.input-button {
+    background-color: #444;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
 
-.form-input:focus { 
-	outline: none; 
-} 
+textarea {
+    width: 100%;
+    height: 150px;
+    background-color: #444;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    resize: vertical;
+}
 
-.image-generate-btn { 
-	background-color: #318C46; 
-	cursor: pointer; 
-	color: #fff; 
-} 
+.prompts {
+    margin-bottom: 20px;
+}
 
-#imageContainerText { 
-	color: #000; 
-} 
+.prompts label {
+    display: block;
+    margin-bottom: 5px;
+}
 
-.image-container { 
-	margin: 50px 0; 
-	display: none; 
-	text-align: center; 
-} 
+.prompts input {
+    width: 100%;
+    height: 30px;
+    background-color: #444;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
 
-.my-generated-image { 
-	width: 100%; 
-	height: 350px; 
-} 
+.generate-button {
+    background-color: #008080;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
 
-@media screen and (min-width: 280px) and (max-width: 920px) { 
-	.container { 
-		width: 100%; 
-	} 
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 
-	.my-generated-image { 
-		width: 100%; 
-		height: 300px; 
-	} 
+.option {
+    display: flex;
+    align-items: center;
+}
+
+.option label {
+    margin-right: 10px;
+}
+
+.option select {
+    background-color: #444;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.inspiration {
+    margin-bottom: 20px;
+}
+
+.inspiration-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.inspiration-item {
+    text-align: center;
+}
+
+.inspiration-item img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.use-prompt-button {
+    background-color: #008080;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.inspire-me-button,
+.random-button {
+    background-color: #008080;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
 }
