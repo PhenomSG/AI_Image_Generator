@@ -4,7 +4,7 @@ A robot painting a robot portrait in a studio , futuristic  robot, mix of steamp
 
 IMAGE 2
 prompt ->
-
+All the below details should be ultra-detailed and realistic. robot-skinned fairy tale princess at night in a forest with fireflies
 
 IMAGE 3
 prompt ->
