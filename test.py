@@ -4,7 +4,7 @@ from diffusers import DiffusionPipeline
 pipeline = DiffusionPipeline.from_pretrained("cloudqi/cqi_text_to_image_pt_v0")
 
 # Define the text prompt
-text_prompt = "A beautiful landscape with mountains and a river during sunset"
+text_prompt = "Anime girl"
 
 # Generate the image
 image = pipeline(text_prompt).images[0]

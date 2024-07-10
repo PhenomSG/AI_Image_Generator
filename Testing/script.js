@@ -29,6 +29,7 @@ function generateImage() {
     .then(data => {
         const imgUrl = data.output[0];
         document.getElementById('generated-image').src = imgUrl;
+        document.getElementById('image-url').textContent = imgUrl;
     })
     .catch(error => {
         console.error('Error:', error);
