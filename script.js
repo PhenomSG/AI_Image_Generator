@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const style = stylesSelect.value;
 
         const data = {
-            key: "1C2E4Cy0VlkWDY0Gfmdrz6pwFCKDIqln3lPzo255aFmAYEsrq0jkUz9kdWUu",
+            key: "your-api-here",
             prompt: prompt,
             negative_prompt: negativePrompt,
             aspect_ratio: aspectRatio,
