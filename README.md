@@ -6,7 +6,7 @@ This project is a web-based application that allows users to generate AI-generat
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/SahajG009/AI_Image_Generator_Website.git
+   git clone https://github.com/PhenomSG/AI_Image_Generator_Website.git
    ```
 2. Navigate to the project directory:
    ```bash
